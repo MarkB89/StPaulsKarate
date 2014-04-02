@@ -5,39 +5,69 @@
       <link type="text/css" rel="stylesheet" href="css/normalize.css"/>
       <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
       <link type="text/css" rel="stylesheet" href="css/style.css"/>
-      <link type="text/css" rel="stylesheet" href="css/grading-style.scss"/>
-                  <title>St. Paul's Karate Club</title>
+      <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+
+
+   <title>St. Paul's Karate Club</title>
   </head>
     <body>
-    	<div class="container">
-    		<h1>St. Paul's Karate Club</h1>
-    		<h2>Dublin, Ireland<h2>
-    	</div>
+    	<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand text-muted" href="#">St. Paul's Karate Club</a>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li class="dropdown">
+              <a data-toggle="dropdown" data-target="grading.html">Grading<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="grading.html">9th &amp; 8th Kyu</a></li>
+                <li><a href="#">7th Kyu</a></li>
+                <li><a href="#">6th Kyu</a></li>
+                <li><a href="#">5th Kyu</a></li>
+				<li><a href="#">4th Kyu</a></li>
+				<li><a href="#">3rd Kyu</a></li>
+				<li><a href="#">2nd Kyu</a></li>
+				<li><a href="#">1st Kyu</a></li>
 
-    	<div class="btn btn-warning btn-lg"><b class ="glyphicon glyphicon-edit"></b>
-    	<a data-toggle="modal" data-target="#myModal">Become A Member!</a>
-    	</div>	
 
-    	<div class="container">
-	    	<nav class="page header container">
-	  			 	    <div class="nav nav-tabs nav-justified navbar-fixed" role="navigation">
-					     	<li><a href="index.html">About</a></li>
-			  				<li><a href="#">Classes</a></li>
-  				
-			  				<li class="dropdown"><a data-toggle="dropdown" data-target="#">Grading<b class="caret"></b></a>
-			  					<ul class="dropdown-menu">
-			  						<li><a href='#'>Beginner</a></li>
-			  						<li><a href='#'>Advanced</a></li>
-			  					</ul>	
-			  				</li> 
+                <li class="divider"></li>
+                <li><a href="grading.html">Grading Info</a></li>
+              </ul>
+              </li>
+              <li class="dropdown">
+              <a data-toggle="dropdown" data-target="#">Our Club<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Instructor Profiles</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+              </ul>
+            </li>
+            <li><a href="location.html">Location</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    	
+    	<div class="container title-box">
+    		<img src="img/logo.jpg" class="logo">
+    		<div class="container">
+		    		<h1>St. Paul's Karate Club</h1>
+		    	</div>
 
-			  				<li><a href="#">Instructor Profiles</a></li>
-			  				<li><a href="#">Location</a></li>
-			  			</div>
-					
+		    	<div class="btn btn-warning btn-lg"><b class ="glyphicon glyphicon-edit"></b>
+		    	<a data-toggle="modal" data-target="#myModal">Become A Member!</a>
+		    	</div>	
+		    </div>
 
-			</nav>
-		</div>	
     	
 		<!-- Modal -->
 		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -48,108 +78,266 @@
 		        <h4 class="modal-title" id="myModalLabel">Interested in becoming a member?</h4>
 		      </div>
 		      <div class="modal-body">
-		        <h3>Email Us At</h3>
+            <p>Give us your number and we'll be in touch!</p>
+            <form class="form">
+              <div class="form-group">
+                <label class="sr-only" for="mobilePhone">Mobile Phone</label>
+                <input type="tel" class="form-control" id="mobilePhone" placeholder="Mobile Phone">
+              </div>
+             <div class="form-group">
+
+             </div>
+            </form>
+		        <h3>Or Email Us At</h3>
 		        <h6>stpaulskarate@gmail.com</h6>
 		        <h3>Or Call Tom on</h3>
 		        <h6>0872389159</h6>
 		      </div>
 		      <div class="modal-footer">
 		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		        <button type="button" class="btn btn-primary">Save changes</button>
+		        <button type="submit" class="btn btn-primary" data-dismiss="modal">Submit</button>
 		      </div>
 		    </div>
 		  </div>
 		</div>
 
-		<div class="main-content">
+<!-- <div class="main-content row">
 
-		<div class="belt">
-		<div class="first-gradient"></div>
-		<div class="second-gradient"></div>
-		<div class="third-gradient"></div>
-		<div class="fourth-gradient"></div>
-		<div class="fifth-gradient"></div>
-		<div class="six-gradient"></div>
-		<div class="seventh-gradient"></div>
-		<div class="eighth-gradient"></div>
-		<div class="ninth-gradient"></div>
-		<div class="tenth-gradient"></div>
-		</div>
+	<ul class="nav nav-pills belt-nav center-block">
+  		<li class="active"><a href="#Main">Grading</a></li>
+  		<li><a href="#">White Belt</a></li>
+ 	 	<li><a href="#">Yellow Belt</a></li>
+ 	 	<li><a href="#orange">Orange Belt</a></li>
+ 	 	<li><a href="#">Green Belt</a></li>
+ 	 	<li><a href="#">Blue Belt</a></li>
+ 	 	<li><a href="#">Purple Belt</a></li>
+ 	 	<li><a href="#">Brown Belt</a></li>
+ 	 	<li><a href="#">Brown Belt</a></li>
+ 	 	<li><a href="#">Black Belt</a></li>
+	</ul> -->
+
+		<!-- 	<div class="belt col-md-2">
+			<div class="zero-gradient"></div>
+			<div class="first-gradient"></div>
+			<div class="second-gradient"></div>
+			<div class="third-gradient"></div>
+			<div class="fourth-gradient"></div>
+			<div class="fifth-gradient"></div>
+			<div class="six-gradient"></div>
+			<div class="seventh-gradient"></div>
+			<div class="eighth-gradient"></div>
+</div> -->
 		
-		</div>
-<div class="content grading-steps">
-					<h1>Animated Steps</h1>
-			<div class="steps">
-			  <ol>
-			    <li>
-			      <h3 class="heading">Heading for list item 1</h3>
-			      <p>Quisque tristique id sapien vitae sagittis. Nam vel consectetur magna. Suspendisse quis blandit nisl. Praesent mattis sapien id enim pharetra, vel bibendum nisi fringilla. Mauris ultricies, felis eu dignissim ornare, lorem urna accumsan orci, quis scelerisque erat turpis at sapien. Nullam luctus sem sit amet mi ultrices congue.</p>        
-			      <p>Vestibulum euismod urna ac posuere vestibulum. Suspendisse potenti. Quisque lacinia lacus ultricies interdum gravida. Sed ultrices rutrum magna ac consequat.</p>
-			    </li>
-			    <li>
-			      <h3 class="heading">Heading for list item 2</h3>
-			       <p>Quisque tristique id sapien vitae sagittis. Nam vel consectetur magna. Suspendisse quis blandit nisl. Praesent mattis sapien id enim pharetra, vel bibendum nisi fringilla. Mauris ultricies, felis eu dignissim ornare, lorem urna accumsan orci, quis scelerisque erat turpis at sapien. Nullam luctus sem sit amet mi ultrices congue.</p>        
-			      <p>Vestibulum euismod urna ac posuere vestibulum. Suspendisse potenti. Quisque lacinia lacus ultricies interdum gravida. Sed ultrices rutrum magna ac consequat.</p>
-			    </li>
-			    <li>
-			      <h3 class="heading">Heading for list item 3</h3>
-			       <p>Quisque tristique id sapien vitae sagittis. Nam vel consectetur magna. Suspendisse quis blandit nisl. Praesent mattis sapien id enim pharetra, vel bibendum nisi fringilla. Mauris ultricies, felis eu dignissim ornare, lorem urna accumsan orci, quis scelerisque erat turpis at sapien. Nullam luctus sem sit amet mi ultrices congue.</p>        
-			      <p>Vestibulum euismod urna ac posuere vestibulum. Suspendisse potenti. Quisque lacinia lacus ultricies interdum gravida. Sed ultrices rutrum magna ac consequat.</p>
-			    </li>
-			    <li>
-			      <h3 class="heading">Heading for list item 4</h3>
-			       <p>Quisque tristique id sapien vitae sagittis. Nam vel consectetur magna. Suspendisse quis blandit nisl. Praesent mattis sapien id enim pharetra, vel bibendum nisi fringilla. Mauris ultricies, felis eu dignissim ornare, lorem urna accumsan orci, quis scelerisque erat turpis at sapien. Nullam luctus sem sit amet mi ultrices congue.</p>        
-			      <p>Vestibulum euismod urna ac posuere vestibulum. Suspendisse potenti. Quisque lacinia lacus ultricies interdum gravida. Sed ultrices rutrum magna ac consequat.</p>
-			    </li>
-			    <li>
-			      <h3 class="heading">Heading for list item 5</h3>
-			       <p>Quisque tristique id sapien vitae sagittis. Nam vel consectetur magna. Suspendisse quis blandit nisl. Praesent mattis sapien id enim pharetra, vel bibendum nisi fringilla. Mauris ultricies, felis eu dignissim ornare, lorem urna accumsan orci, quis scelerisque erat turpis at sapien. Nullam luctus sem sit amet mi ultrices congue.</p>        
-			      <p>Vestibulum euismod urna ac posuere vestibulum. Suspendisse potenti. Quisque lacinia lacus ultricies interdum gravida. Sed ultrices rutrum magna ac consequat.</p>
-			    </li>
-			    <li>
-			      <h3 class="heading">Heading for list item 6</h3>
-			       <p>Quisque tristique id sapien vitae sagittis. Nam vel consectetur magna. Suspendisse quis blandit nisl. Praesent mattis sapien id enim pharetra, vel bibendum nisi fringilla. Mauris ultricies, felis eu dignissim ornare, lorem urna accumsan orci, quis scelerisque erat turpis at sapien. Nullam luctus sem sit amet mi ultrices congue.</p>        
-			      <p>Vestibulum euismod urna ac posuere vestibulum. Suspendisse potenti. Quisque lacinia lacus ultricies interdum gravida. Sed ultrices rutrum magna ac consequat.</p>
-			    </li>
-			  </ol>
+		<div class='col-md-10'>
+			<article class="article" id="Main">Main Info
+				<p>In Shotokan you will be required to take an exam to gain the next grade (kyu/dan), you will be graded apon a few different aspects.
+
+					Kata
+					Kumite
+					Moves/Techniques
+
+					Kata – Originally were teaching and training methods by which successful combat techniques were preserved and passed on. They are performed against a series of predefined imaginary attacks by several opponents. There are a total of 27 kata in the current Shotokan System.
+
+					Kumite – The first type of kumite for beginners is Gohon kumite. The defender steps back each time, blocking the attacks and performing a counterattack (usally with a Kiai) after the last block. Other Kumite can include, Ippon kumite – one step sparring, Sanbon kumite – three step sparring, Jiyu kumite – free sparring.
+				</p>
+
+			</article>
+			
+			<article class="article">White Belt (9th Kyu)</article>
+			
+			<article class="article">Yellow Belt (8th Kyu)</article>
+			
+			<article class="article" id="orange">Orange Belt (7th Kyu)</article>
+			
+			<article class="article">Green Belt (6th Kyu)</article>
+			
+			<article class="article">Blue Belt (5th Kyu)</article>
+			
+			<article class="article">Purple Belt (4th Kyu)</article>
+			
+			<article class="article">Brown Belt (3rd Kyu)
+				<p>
+					3rd Kyu (Brown belt)
+					3rd Kyu is the low intermediate shotokan rank where you will learn some more techniques and higher kata,
+					to attain your next Kyu you will be asked to preform Some Techniques, Kumite and preform a Kata.
+
+					Techniques
+
+					ZENKUTSU DACHI GEDAN BARAI
+					CHUDAN JUN ZUKI
+					CHUDAN GYAKU ZUKI
+					JODAN AGE UKE
+					CHUDAN SOTO UDE UKE
+					CHUDAN UCHI UDE UKE
+					CHUDAN SHUTO UKE
+					ZENKUTSU DACHI GAMAE
+					MAE GERI
+					MAWASHI GERI
+					KIBA DACHI
+					YOKO KEAGE
+					YOKO KEKOMI
+					ZENKUTSU DACHI GAMAE
+					USHIRO GERI
+					The Kumite
+
+					The kumite will be Shitei Kihon Ippon where you will be asked to preform your techniques on a partner “Jodan” & “Chudan” will be called meaning Jodan “head” or Chudan “chest” on calling the body part you will defend or attack that part of the body
+
+					The Kata
+
+					The Kata you will be asked to preform and be graded on is Tekki Shodan “peaceful mind”, below is a short Video of Sensei Kanazawa preforming Tekki Shodan.
+				</p>
+
+			<div class="container">            
+            <div class="row">
+                <div class="col-sm-4">Content. This is content, it is not meant to be read or understood. Something random goes here, it can be whatever you want, it's just blankish content provided so that it fills up some space, pretty boring huh?</div>
+                <div class="col-sm-8">
+                   <iframe class="col-lg-2 col-md-6 col-sm-12 col-xs-12" src="http://www.youtube.com/embed/KgMttr4Vc" frameborder="0" allowfullscreen></iframe>
+                </div>
+ 			</div>
 			</div>
-</div>
+
+
+			</article>
+			
+			<article class="article">Brown Belt (2nd Kyu)
+				<p>
+					2nd Kyu is the mid intermediate shotokan rank where you will learn some more techniques and higher kata, to attain your next Kyu you will be asked to preform Some Techniques, Kumite and preform two Katas.
+
+				<b>Techniques</b>
+
+				ZENKUTSU DACHI GEDAN BARAI
+				MAE GERI – JUN ZUKI
+				MAWASHI GERI – GYAKU ZUKI
+				GYAKU ZUKI – MAEGERI – JUN ZUKI – GEDAN BARAI
+				ZENKUTSU DACHI GAMAE
+				MAE GERI – MAWASHI GERI
+				KIZAMI YOKO KEKOMI – USHIRO GERI
+				KIBA DACHI
+				YOKO KEAGE – YOKO KEKOMI
+
+				<b>The Kumite</b>
+
+				The kumite will be Jiyu Kihon Ippon where you will be asked to preform your techniques on a partner “Jodan” & “Chudan” will be called meaning Jodan “head” or Chudan “chest” on calling the body part you will defend or attack that part of the body
+
+				<b>The Kata</b>
+				The Kata you will be asked to preform and be graded on is Tekki Shodan plus and extra kata from the Heian katas from previous Kyu Grades, below is a short Video of Sensei Kanazawa preforming Tekki Shodan as a reminder, you can also look back on previous Heian Katas by looking through the previous Kyu Grades.
+				</p>	
+
+
+			</article>
+
+			<article class="article">Brown Belt (1st Kyu)
+				<p>
+					<b>1st Kyu (Brown belt)</b>
+					Identical to 2nd Kyu 1st Kyu is the mid intermediate shotokan rank where you will learn some more techniques and higher kata,
+					1st Kyu is the last of the Kyu ranks to get you ready for your Dan Grade (1st black belt),
+					to attain your next Kyu you will be asked to preform Some Techniques, Kumite and preform two Katas.
+
+					<b>Techniques</b>
+
+					ZENKUTSU DACHI GEDAN BARAI
+					MAE GERI – JUN ZUKI
+					MAWASHI GERI – GYAKU ZUKI
+					GYAKU ZUKI – MAEGERI – JUN ZUKI – GEDAN BARAI
+					ZENKUTSU DACHI GAMAE
+					MAE GERI – MAWASHI GERI
+					KIZAMI YOKO KEKOMI – USHIRO GERI
+					KIBA DACHI
+					YOKO KEAGE – YOKO KEKOMI
+					The Kumite
+
+					The kumite will be Jiyu Kihon Ippon where you will be asked to preform your techniques on a partner “Jodan” & “Chudan” will be called meaning Jodan “head” or Chudan “chest” on calling the body part you will defend or attack that part of the body
+
+					<b>The Kata</b>
+
+					The Kata you will be asked to preform and be graded on is Tekki Shodan plus and extra kata from the Heian katas from previous Kyu Grades, below is a short Video of Sensei Kanazawa preforming Tekki Shodan as a reminder, you can also look back on previous Heian Katas by looking through the previous Kyu Grades.
+				</p>
+			</article>
+			
+			<article class="article">Black Belt</article>
+		
+	</div>
+
+	<div>
+			<div class="div-belt" id="main-belt">Heya</div>
+			<div class="div-belt" id="white-belt">Heya</div>
+			<div class="div-belt" id="yellow-belt">Heya</div>
+			<div class="div-belt" id="orange-belt">Heya</div>
+			<div class="div-belt" id="green-belt">Heya</div>
+			<div class="div-belt" id="blue-belt">Heya</div>
+			<div class="div-belt" id="purple-belt">Heya</div>
+			<div class="div-belt" id="brown1-belt">Heya</div>
+			<div class="div-belt" id="brown2-belt">Heya</div>
+			<div class="div-belt" id="brown3-belt">Heya</div>
+			<div class="div-belt" id="black-belt">Heya</div>
+	</div>	
+
+
+		
+
+</div>		
+<!-- Footer -->
 
     	<footer class="container-fluid">
 
-    		<article class="row">
+    		<article class="row footer-glyph">
 						<div class="col-md-4">
-							<b class ="glyphicon glyphicon-star lg-glyph"></b>
+							<div class="col-md-2">
+							<b class ="glyphicon glyphicon-map-marker lg-glyph"></b>
+							</div>	
+							<div class="col-md-10">
 							<p>St Paul’s Karate Club
 								<br>
-								Raheny
+								Saint Paul’s College,
 								<br>
-								Dublin
+								Sybil Hill Road,
+								<br>
+								Dublin 5
+								<br>
+								Ireland
 							</p>
+							</div>
+
 						</div>
 
 						<div class="col-md-4">
-							<b class ="glyphicon glyphicon-star lg-glyph"></b>
-							<h2>Our
-								<span>Ethos</span>
-							</h2>
-							<p>Our mission is to improve ones health and skills through the art of shotokan karate.</p>
+							<div class="col-md-2">
+							<b class ="glyphicon glyphicon-phone lg-glyph"></b>
+							</div>
+							<div class="col-md-10">
+							<p>Telephone: +353 87 238 9159
+							<br>
+								Email: <a href='#'>dublinkarate@gmail.com</a>
+							</p>
+							</div>
 						</div>
 
 						<div class="col-md-4">
+						<div class="col-md-2">
 						<b class ="glyphicon glyphicon-user lg-glyph"></b>
-							<h2>Member
-								<span>Quotes</span>
-							</h2>
-							<p>'St Paul’s Karate Club made me the man I am today.' M. Byrne, Toronto.</p>
+						</div>
+						<div class="col-md-10">
+						<p>Mark Byrne, 2014</p> 
+						</div>
 						</div>
 					</article>
 
     	</footer>
 
+
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 		<script src="bootstrap/js/bootstrap.min.js"></script>
-		<script src="js/grading-js.js"></script>
+		<script src="js/waypoints.js"></script>
+		<script type="text/javascript">
+		$( document ).ready(function() {
+
+						$("li").waypoint(function(){
+					$(this).toggleClass('seen');
+				}, { 
+					offset: 'bottom-in-view'
+			});
+			});
+		</script>
 
     </body>
 </html>

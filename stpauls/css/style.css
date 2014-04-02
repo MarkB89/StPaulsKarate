@@ -1,21 +1,51 @@
+@font-face {
+font-family: WolfsRain;
+src:url(../fonts/WolfsRain.ttf);
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Special Elite';
+}
+
+h2 {
+  text-align:center;
+}
+
+.container h2 {
+	font-family: 'Special Elite';
+	margin: auto, 0;
+}
+
+
 .navbar-inner {
 	text-align: center;
 }
 
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 div.btn.btn-warning.btn-lg {
 	position: relative;
-	left:940px;
-	bottom:90px;
+	left: 1042px;
+	bottom: 78px;
+	background-color: #b7383c;
+	border-color: #262022;
+	font-size: 14px;
+	font-style: bold;
 }
 
-#parallax {
-	height: 600px;
-	width: auto;
-	z-index: 10;
-	padding: 50px;
-	
+div.btn.btn-warning.btn-lg a {
+	color: white;
+	text-decoration: none;
+
 }
 
+div.btn.btn-warning.btn-lg:hover {
+	background-color: #333;
+}
 .main-img {
 	background:url("img/karate.JPG") no-repeat;
 	height: 450px;
@@ -28,7 +58,10 @@ footer {
 	background-color: #262022;
 	width: 100%;
 	color:#4E4D4A;
+	overflow: hidden;
+	padding-top: 40px;
 }
+
 
 nav {
 background-color: #262022;
@@ -37,6 +70,12 @@ padding-bottom: 20px;
 font-size: 25px;
 position: relative;
 bottom: 65px;
+border-radius: 5px;
+
+}
+
+.navbar {
+	background-color: #262022;
 
 }
 
@@ -46,40 +85,65 @@ bottom: 65px;
 	border-radius: 65px;
 	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	position: relative;
-	top: 25px;
+	top: 80px;
 }
 
 .container h1 {
 	position: relative;
-	bottom: 85px;
+	bottom: 26px;
 	left: 220px;
-	font-family: 'Cabin';
+	font-family: 'Permanent Marker';
+	font-size: 65px;
+	color: black;
 }
 
-
+.title {
+	background-color: #262022;
+}
 
 
 nav.nav-tabs.nav-justified.navbar-fixed {
 	border-radius: 0;
+	color: #F9B931;
+	padding: 10px 15px;
 
-}
+} 
 
 nav a {
 	color: #F9B931;
+	border-radius: 5px;
 }
 
 nav a:hover {
 	color: white;
 }
 
+
+.navbar-inverse .navbar-brand {
+	color: #F9B931;
+}
+
+.nav li a {
+	font-family: 'Cabin';
+	font-size: 18px;
+}
+
 .nav li a:hover{
 	background-color: #b7383c;
+	
+}
+
+.container .title-box {
+background-image:url('img/paper-texture.jpg');
+overflow: hidden;
+
 }
 
 .nav-tabs > li > a {
 	border:none;
-	}
+	border-radius: 5px;
 
+	}
 
 
 .nav-tabs.nav-justified li a {
@@ -100,9 +164,6 @@ border-radius: none;
 	text-align: center;
 }
 
-.content {
-	height: 600px;
-}
 
 .footer-glyph {
 	font-size: 1em;
@@ -111,7 +172,21 @@ border-radius: none;
 
 
 .belt {
-	width: 50px;
+	width: 200px;
+	margin-left: 20px;
+}
+
+.belt-nav {
+
+}
+
+.zero-gradient {
+  height:500px;
+  background: -webkit-linear-gradient(#FFFFCC, white); 
+  background: -o-linear-gradient(#FFFFCC, white);
+  background: -moz-linear-gradient(#FFFFCC, white);
+  background: linear-gradient(#FFFFCC, white);
+
 }
 
 .first-gradient {
@@ -162,11 +237,287 @@ border-radius: none;
 
 .seventh-gradient {
 height:500px;
-  background: -webkit-linear-gradient(brown, gray);
-  background: -o-linear-gradient(brown, gray);
-  background: -moz-linear-gradient(brown, gray);
-  background: linear-gradient(brown, gray);
+  background: -webkit-linear-gradient(brown,black);
+  background: -o-linear-gradient(brown, black);
+  background: -moz-linear-gradient(brown, black);
+  background: linear-gradient(brown, black); 
 }
 
 
-body { margin:0px; }
+.eighth-gradient {
+height:300px;
+  background: -webkit-linear-gradient(black, white);
+  background: -o-linear-gradient(black, white);
+  background: -moz-linear-gradient(black, white);
+  background: linear-gradient(black, white);
+}
+
+.article {
+	height:500px;
+	width: 750px;
+	background-color: #333;
+	margin-top: 100px;
+	margin-left: auto;
+	color: white;
+}
+
+.article-classes {
+	height:500px;
+	width: 750px;
+	background-color: #333;
+	margin-top: 20px;
+	margin-left: auto;
+	color: white;
+	margin-bottom: 50px;
+	border-radius: 5px;
+}
+
+.article p {
+	padding: 75px;
+}
+
+.article-classes h2 {
+	text-align:center;
+	padding-bottom: 10px;
+	font-family: 'Special Elite';
+}
+
+.article-classes h3 {
+	font-family: 'Special Elite';
+}
+
+
+body { 
+margin:0px; 
+background-color: #FFFFCC;
+padding:0px;
+
+}
+
+.body-copy:hover {
+	border-color:#333;
+	border-width:2px;
+
+
+}
+
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header{
+  z-index: 1;
+  position:fixed; 
+  width:100%; 
+  height:60px; 
+  background:rgba(0,0,0,0.1);
+}
+
+header a{
+  color:white;
+  background:rgba(0,0,0,0.1); 
+  display:inline-block; 
+  padding:0px 30px; 
+  height:60px;
+  line-height:60px; 
+  text-align:center;
+  font-family: 'Special Elite', serif; 
+  text-decoration:none;
+  text-transform:uppercase; 
+  letter-spacing:2px; 
+  font-weight:700;
+}
+#hero1{
+ background:url(http://farm5.staticflickr.com/4080/4799984545_490d7a867f_o.jpg);
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;
+}
+#hero2{background: url(http://upload.wikimedia.org/wikipedia/commons/4/4b/Karate_ShuriCastle.jpg);
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;
+}
+.hero, .content{
+  text-align:center; 
+  position:relative;
+  width: 100%;
+}
+
+.inner{
+   position: relative;
+}
+
+.hero .inner{
+  background: rgba(0,0,0,0.7) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAD0lEQVQIW2NkQABjRmQOAAM+AGkQsDBSAAAAAElFTkSuQmCC) repeat;}
+
+
+
+.hero h1, .hero p, .hero h2{ 
+  color:#fff;
+  font-family: 'Special Elite';
+}
+
+.hero p {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.hero h2 {
+	font-size: 30px;
+}
+
+.content h1, .content p{
+  color:#333;
+}
+.home-copy {
+	margin: 75px 0;
+}
+h1{
+  margin:0px;
+  font-family: 'Special Elite';
+  font-weight:400;
+  font-size:32px;
+  padding:0px 20px;
+}
+
+p{
+  font-family: 'Noto Sans', sans-serif; 
+  font-size:14px;
+  padding:0px 20px;
+}
+
+.google-maps {
+        position: relative;
+        padding-bottom: 50%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+
+.google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 500px;
+        overflow: hidden;
+    }
+
+   .div-belt {
+   	height: 600px;
+   	width:100px;
+   	background-color: black;
+   	position: relative;
+	left: 295px;
+	top: 52px;
+
+   }
+
+   #white-belt {
+   	background-color: white;
+   	position: relative;
+	left: 295px;
+	top: 52px;
+   }
+
+   #yellow-belt {
+   	background-color: yellow;
+   	position: relative;
+	left: 295px;
+	top: 52px;
+   }
+
+    #orange-belt {
+   	background-color: orange;
+   	position: relative;
+	left: 295px;
+	top: 52px;
+   }
+
+   #green-belt {
+   	background-color: #98ff98;
+   	position: relative;
+	left: 295px;
+	top: 52px;
+   }
+
+   #blue-belt {
+   	background-color: blue;
+   	position: relative;
+	left: 295px;
+	top: 52px;
+   }
+
+    #purple-belt {
+   	background-color: purple;
+   	position: relative;
+	left: 295px;
+	top: 52px;
+   }
+
+    #brown1-belt {
+   	background-color: brown;
+   	position: relative;
+	left: 295px;
+	top: 52px;
+   }
+
+    #brown2-belt {
+   	background-color: brown;
+   	position: relative;
+	left: 295px;
+	top: 52px;
+   }
+
+ 	#brown3-belt {
+   	background-color: brown;
+   	position: relative;
+	left: 295px;
+	top: 52px;
+   }
+
+    #black-belt {
+   	background-color: black;
+   	position: relative;
+	left: 295px;
+	top: 52px;
+   }
+
+   .classes-div {
+   		height: 600px;
+   		width:100px;
+   		background-color: black;
+   		position: relative;
+		left: 295px;
+		top: 52px;
+   }
+
+   .gallery-img ul {         
+          padding:0 0 0 0;
+          margin:0 0 0 0;
+      }
+
+     .gallery-img ul li {     
+          list-style:none;
+          margin-bottom:25px;      
+      }
+    
+    .gallery-img ul  ul li img {
+          cursor: pointer;
+      }
+   .gallery-img img {
+   	width: 100%;
+   	height: auto;
+   }
+
+
+   .sensei-img {
+   	padding:20px;
+   }
+
+   .sensei {
+   	padding-top:60px;
+   }
